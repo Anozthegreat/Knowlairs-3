@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #2f322b;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contactmain{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 10%;
+}
+h7{
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #0b0c0a;
+    align-items: center;
+}
+h7::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #0b0c0a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+h7:hover::after{
+    width:  99%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.lists{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 700;
+    color: #121516;
+    border-radius: 10px;
+}
+.lists{
+    border: 2px solid #0b0c0a;
+}
+.contactmain textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff0000, #8c5151);
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .contactmain {
+        flex-direction: column;
+    }
+
+    .lists {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    .sidebar img{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
