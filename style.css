@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #585151;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.game-container {
+    text-align: center;
+    background-color: #a7a0ae;
+    border: 5px solid #00ff1a;
+    border-radius: 60px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+.card {
+    width: 60px;
+    height: 90px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.controls {
+    margin: 20px 0;
+}
+button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease;
+}
+button:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.dealer-hand{
+}
+.player-hand{
+}
+@media (max-width: 600px) {
+    h1{
+        font-size: 2em;
+    }
+    .card {
+        width: 40px;
+        height: 60px;
+        font-size: 18px;
+    }
+    button {
+        display: block;
+        margin-left: 95px;
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 80px;
+    }
+}
