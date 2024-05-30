@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack 21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="heading">
+        <h1><strong>BLACKJACK 21</strong></h1>
+        </div>
+        <div class="dealer-hand">
+            <h2>Dealer's Hand</h2>
+            <div id="dealer-cards" class="cards"></div>
+            <div id="dealer-score" class="score">Score: 0</div>
+        </div>
+        <div class="player-hand">
+            <h2>Your Hand</h2>
+            <div id="player-cards" class="cards"></div>
+            <div id="player-score" class="score">Score: 0</div>
+        </div>
+        <div class="controls">
+            <button id="hit-button">Hit</button>
+            <button id="stand-button">Stand</button>
+            <button id="restart-button">Restart</button>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    <audio id="deal-sound" src="sound/deal.wav"></audio>
+    <audio id="hit-sound" src="sound/hit.wav"></audio>
+    <audio id="stand-sound" src="sound/stand.wav"></audio>
+    <audio id="win-sound" src="sound/win.wav"></audio>
+    <audio id="lose-sound" src="sound/lose.wav"></audio>
+    <audio id="tie-sound" src="sound/tie.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
